@@ -14,7 +14,9 @@ const Login = () => {
 
   useEffect(() => {
     if (isLoginSuccessful) {
-      navigate("/app/board", { replace: true });
+      setTimeout(() => {
+        navigate("/app/board", { replace: true });
+      }, 5000);
     }
   }, [isLoginSuccessful, navigate]);
 
