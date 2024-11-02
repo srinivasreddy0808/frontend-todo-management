@@ -1,0 +1,134 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 35px;
+  padding-top: 45px;
+  border-radius: 8px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modalTitle {
+  margin: 0 0 24px 0;
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.24px;
+  text-align: left;
+  color: #000000;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.emailInput {
+  padding: 24px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+  border: 1px solid #767575;
+  width: 540px;
+  height: 47px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.24px;
+  text-align: left;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.cancelButton {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: white;
+  color: #666;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  color: #cf3636;
+  border: 1px solid #cf3636;
+}
+
+.cancelButton:hover {
+  background-color: #f5f5f5;
+}
+
+.addButton {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #17a2b8;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.addButton:hover {
+  background-color: #0077b6;
+}
+
+.emailText {
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.24px;
+  text-align: left;
+  color: #000000;
+}
+
+.closeButton {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  width: 300px;
+  height: 45px;
+  background: #17a2b8;
+  border-radius: 12px;
+  border: none;
+}
+
+.successModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}

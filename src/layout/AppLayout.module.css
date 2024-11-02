@@ -1,0 +1,40 @@
+.appContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.sidebarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 224px;
+  height: 100%;
+}
+
+.mainContent {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.mainContent {
+  overflow-x: auto;
+}
+.mainContent::-webkit-scrollbar-button {
+  display: none;
+}
+
+.mainContent::-webkit-scrollbar {
+  height: 10px;
+}
+
+.mainContent::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+.mainContent::-webkit-scrollbar-thumb {
+  background: #8daab9cc;
+  border-radius: 10px;
+}

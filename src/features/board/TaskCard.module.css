@@ -1,0 +1,241 @@
+.taskCard {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priorityIndicator {
+  display: flex;
+  align-items: center;
+}
+
+.priorityText {
+  font-family: Poppins, sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  color: #707070;
+}
+
+.priorityDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.green {
+  background-color: #63c05b;
+}
+
+.blue {
+  background-color: #18b0ff;
+}
+
+.red {
+  background-color: #ff2473;
+}
+
+.hidden {
+  display: none;
+}
+
+.moreButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #757575;
+}
+
+.moreButtonDropdownContainer {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  position: absolute;
+  top: 40px;
+  right: 1px;
+  z-index: 1000;
+}
+
+.moreButtonDropdownContainer button {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.moreButtonDropdownContainer button:hover {
+  background-color: #f0f0f0;
+}
+
+.moreButtonDropdownContainer button:last-child {
+  color: #ff3b30;
+}
+
+.taskCard .title {
+  margin-bottom: 12px;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: #000000;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.checklistStatus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.checklistText {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-align: left;
+}
+
+.expandButton {
+  background: #eeecec;
+  border: none;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checklistItems {
+  margin-bottom: 12px;
+}
+
+.checklistItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  height: 42px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.checklistRadio {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.checklistItemText {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  color: #000000;
+}
+
+.checklistChecked {
+  background-color: #17a2b8;
+  border: 2px solid #17a2b8;
+
+  border-radius: 6px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.checklistUnchecked {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border: 2px solid #e2e2e2;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date {
+  font-family: Poppins;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #dbdbdb;
+  color: #5a5a5a;
+}
+.dateColor {
+  background: #cf3636;
+  color: #ffffff;
+}
+
+.statusContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.status {
+  font-family: Poppins;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  color: #767575;
+  background-color: #eeecec;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.done {
+  background: #63c05b;
+}
+.avatarInitials {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffebeb;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  font-weight: bold;
+  font-family: DM Sans;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+}

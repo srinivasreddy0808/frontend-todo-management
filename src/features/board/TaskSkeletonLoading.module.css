@@ -1,0 +1,76 @@
+.skeletonTask {
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+}
+
+.skeletonPulse {
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  background: #e5e7eb;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.skeletonHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.skeletonTitle {
+  height: 16px;
+  width: 75%;
+  border-radius: 4px;
+}
+
+.skeletonIcon {
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.skeletonContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.skeletonLine {
+  height: 12px;
+  border-radius: 4px;
+}
+
+.skeletonLineShort {
+  width: 50%;
+}
+
+.skeletonFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.skeletonDate {
+  height: 16px;
+  width: 80px;
+  border-radius: 4px;
+}
+
+.skeletonPriority {
+  height: 16px;
+  width: 64px;
+  border-radius: 4px;
+}

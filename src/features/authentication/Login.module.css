@@ -1,0 +1,172 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.blueBackground {
+  flex: 1.51;
+  background-color: #38b2ac;
+  flex-direction: column;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.circle,
+.robot {
+  display: block;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.robot {
+  position: absolute;
+  top: 55px;
+  left: 15px;
+  z-index: 2;
+}
+
+.welcomeText h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 33.08px;
+  line-height: 66.15px;
+  text-align: center;
+  color: #ffffff;
+}
+.welcomeText p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 19.29px;
+  font-weight: 400;
+  line-height: 38.59px;
+  text-align: center;
+  color: #ffffff;
+}
+.formContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif; /* Ensure you have this font imported */
+  font-size: 33.08px;
+  font-weight: 600;
+  line-height: 45.04px;
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+.form {
+  width: 100%;
+  max-width: 493px;
+}
+
+.inputGroup {
+  position: relative;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  padding-left: 43px;
+  padding-right: 32px;
+  border-radius: 11.03px;
+  border: 1.38px solid #d0d0d0;
+  font-family: Open Sans;
+  font-size: 19.29px;
+  font-weight: 400;
+  line-height: 26.28px;
+  text-align: left;
+  color: #828282;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  transform: translateY(-50%);
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.loginButton {
+  width: 100%;
+  height: 55px;
+  padding: 13px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif; /* Ensure you have a fallback font */
+  font-size: 19.29px;
+  font-weight: 400;
+  line-height: 26.28px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.registerText {
+  margin-top: 16px;
+  color: #828282;
+  font-family: "Open Sans", sans-serif; /* Include a fallback font */
+  font-size: 19.29px;
+  font-weight: 400;
+  line-height: 26.28px;
+  text-align: left; /* Changed to left */
+  margin-bottom: 5px;
+}
+
+.registerButton {
+  margin-top: 8px;
+  padding: 14px;
+  width: 493px;
+  height: 55px;
+  background-color: transparent;
+  color: #17a2b8;
+  border: 1.38px solid #17a2b8;
+  border-radius: 55px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif; /* Include a fallback font */
+  font-size: 19.29px;
+  font-weight: 400;
+  line-height: 26.28px;
+  text-align: center; /* Center alignment */
+}
+
+.errorMessage {
+  color: #db371f;
+  font-family: "Inter", sans-serif; /* Include a fallback font */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  text-align: left; /* Left alignment */
+}

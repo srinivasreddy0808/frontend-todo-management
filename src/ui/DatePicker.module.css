@@ -1,0 +1,156 @@
+.container {
+  width: 256px;
+  background: white;
+  border-radius: 8px;
+}
+
+.wrapper {
+  background: #ffffff;
+}
+
+.wrapper :global(.react-datepicker) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: none;
+  width: 100%;
+  background-color: white;
+}
+
+.wrapper :global(.react-datepicker__month-container) {
+  width: 100%;
+  background: white;
+  float: none;
+}
+
+.wrapper :global(.react-datepicker__header) {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-top: 8px;
+}
+
+.wrapper :global(.react-datepicker__month) {
+  margin: 6px;
+  background: white;
+}
+
+.wrapper :global(.react-datepicker__week) {
+  background: white;
+}
+
+.wrapper :global(.react-datepicker__day-names) {
+  background: white;
+}
+
+.wrapper :global(.react-datepicker__current-month) {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.wrapper :global(.react-datepicker__navigation) {
+  top: 8px;
+}
+
+.wrapper :global(.react-datepicker__day-name) {
+  margin: 2px;
+  width: 32px;
+  color: #666;
+}
+
+.wrapper :global(.react-datepicker__day) {
+  margin: 2px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 4px;
+  background: white;
+}
+
+.wrapper :global(.react-datepicker__day:hover) {
+  background-color: #f3f4f6;
+}
+
+.wrapper :global(.react-datepicker__day--keyboard-selected),
+.wrapper :global(.react-datepicker__day--selected) {
+  background-color: #3b82f6 !important;
+  border-radius: 4px;
+  color: white !important;
+}
+
+.wrapper :global(.react-datepicker__day--outside-month) {
+  color: #ccc;
+  background: white;
+}
+
+.wrapper :global(.react-datepicker__triangle) {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  background: white;
+}
+
+.headerTitle {
+  font-weight: 600;
+}
+
+.navigationButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.navButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+  color: #666;
+}
+
+.navButton:hover {
+  background-color: #f3f4f6;
+  border-radius: 4px;
+}
+
+.navButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-top: 1px solid #ddd;
+  background: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.footerButton {
+  color: #3b82f6;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footerButton:hover {
+  text-decoration: underline;
+}
+
+/* Add this to handle any potential transparency issues */
+.wrapper :global(.react-datepicker__input-container) {
+  background: white;
+}
+
+.wrapper :global(.react-datepicker-popper) {
+  background: white;
+}

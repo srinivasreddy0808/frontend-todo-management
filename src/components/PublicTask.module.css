@@ -1,0 +1,275 @@
+.pageContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.logoSection {
+  width: 250px;
+  padding: 24px;
+}
+
+.appLogo {
+  width: 26px;
+  height: 26px;
+  margin-right: 12px;
+}
+.appName {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoIcon {
+  width: 24px;
+  height: 24px;
+  color: #2196f3;
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.mainContent {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 40px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container {
+  max-width: 654px;
+  width: 100%;
+  height: 546px;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 2px solid #edf5fe;
+  margin-top: 60px;
+  box-sizing: border-box;
+}
+
+.priorityTag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Poppins;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+  color: #707070;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.green {
+  background-color: #63c05b;
+}
+
+.blue {
+  background-color: #18b0ff;
+}
+
+.red {
+  background-color: #ff2473;
+}
+
+.title {
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.checklistHeader {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.checklistContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.checklistContainer::-webkit-scrollbar-button {
+  display: none;
+}
+
+.checklistContainer::-webkit-scrollbar {
+  width: 12px;
+}
+
+.checklistContainer::-webkit-scrollbar-track {
+  background: #ffffff;
+  margin-top: 30px;
+}
+.checklistContainer::-webkit-scrollbar-thumb {
+  background: #8daab9cc;
+  border-radius: 10px;
+}
+
+.checklistItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  height: 43px;
+  box-sizing: border-box;
+  margin-right: 15px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.checkbox.checked {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  border-radius: 8px;
+  padding: 2px;
+  border: none;
+}
+
+.checkIcon {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.checklistText {
+  font-size: 14px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: center;
+  color: #000000;
+}
+
+.dueDateContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.dueLabel {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #000000;
+  margin-right: 10px;
+}
+
+.dueDate {
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #ffffff;
+  background: #cf3636;
+}
+
+.highPriority {
+  background: #cf3636;
+}
+
+.loading {
+  text-align: center;
+  padding: 32px;
+  color: #4a4a4a;
+}
+
+.loadingSpinner {
+  width: 100px;
+  height: 100px;
+}
+
+.loadingSpinner::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: 48%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-top: 6px solid #90c4cc;
+  border-right: 6px solid transparent;
+  animation: spinner8217 0.8s linear infinite;
+}
+
+@keyframes spinner8217 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pageContainer {
+    flex-direction: column;
+  }
+  .mainContent {
+    padding: 25px;
+  }
+  .logoSection {
+    padding-left: 40px;
+  }
+  .container {
+    padding: 20px;
+    margin-top: 2px;
+  }
+}

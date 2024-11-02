@@ -1,0 +1,90 @@
+.sidebar {
+  width: 224px;
+  height: 100%;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  flex-grow: 1;
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #64748b;
+}
+
+.navItem.active {
+  background-color: #f1f5f9;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.appName {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+
+.navText {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.icon {
+  margin-right: 12px;
+}
+.appLogo {
+  width: 26px;
+  height: 26px;
+  margin-right: 12px;
+}
+.logoutContainer {
+  padding: 0 20px;
+}
+.logoutText {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #cf3636;
+}
+.logoutButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+}
+
+.logoutIcon {
+  margin-right: 12px;
+}

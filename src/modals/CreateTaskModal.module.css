@@ -1,0 +1,449 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  width: 600px;
+  height: 530px;
+  background-color: white;
+  padding: 26px 34px;
+  border-radius: 8px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.required {
+  color: red;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.input {
+  width: 100%;
+  max-width: 588px;
+  height: 44px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  padding: 5px 16px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #9b959f;
+  box-sizing: border-box;
+}
+.priorityGroup {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.priorityOptions {
+  display: flex;
+  gap: 10px;
+}
+
+.priorityButton {
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #767575;
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+}
+
+.priorityDot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.high-priority {
+  background-color: #ff2473;
+}
+
+.active {
+  background: #eeecec;
+}
+
+.moderate-priority {
+  background-color: #18b0ff;
+}
+
+.moderate-priority.active {
+  background: #eeecec;
+}
+
+.low-priority {
+  background-color: #63c05b;
+}
+
+.low-priority.active {
+  background: #eeecec;
+}
+.checklistGroup {
+  overflow-y: auto;
+  height: 220px;
+}
+
+.checklistGroup::-webkit-scrollbar-button {
+  display: none;
+}
+
+.checklistGroup::-webkit-scrollbar {
+  width: 12px;
+}
+
+.checklistGroup::-webkit-scrollbar-track {
+  background: #d6eaf4;
+  margin-top: 30px;
+}
+.checklistGroup::-webkit-scrollbar-thumb {
+  background: #8daab9cc;
+  border-radius: 10px;
+}
+
+.checklistItem {
+  width: 588px;
+  height: 44px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.checklistItem .checklistCheckbox {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: 18px;
+  height: 18px;
+
+  padding: 5px;
+  border: 2px solid #e2e2e2;
+  border-radius: 10px;
+  color: #17a2b8;
+}
+
+.checklistInput {
+  width: 100%;
+  height: 100%;
+  margin-left: 5px;
+  padding: 11px 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e2e2;
+  padding-left: 38px;
+  box-sizing: border-box;
+}
+
+.deleteButton {
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.addNewButton {
+  width: 100%;
+  height: 44px;
+
+  text-align: left;
+  background: none;
+  border: none;
+  color: #0288d1;
+  cursor: pointer;
+  padding: 5px 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: #767575;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.addNewButtonItem {
+  display: inline-block;
+}
+
+.selectDateButton {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modalActions {
+  width: 588px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.dueDateInput {
+  margin-right: 50px;
+  width: 160px;
+  height: 45px;
+  border: 1px solid #e2e2e2;
+}
+
+.modalActionsRight {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.cancelButton,
+.saveButton {
+  width: 160px;
+  height: 45px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancelButton {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  color: #cf3636;
+  background-color: #ffffff;
+  border: 1px solid #cf3636;
+  border-radius: 12px;
+}
+
+.saveButton {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  background: #17a2b8;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+/* assigne features */
+.assigneeGroup {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 588px;
+  height: 44px;
+}
+
+/* Styles for the assignee input wrapper */
+.assigneeInputWrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.assigneeLabel {
+  white-space: nowrap;
+}
+
+/* Styles for the dropdown toggle button */
+.dropdownToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Styles for the dropdown */
+.dropdown {
+  position: absolute;
+  top: 60px;
+  right: 1px;
+  width: 512px;
+  height: 284px;
+  border-radius: 4px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for each dropdown item */
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown::-webkit-scrollbar-button {
+  display: none;
+}
+
+.dropdown::-webkit-scrollbar {
+  width: 12px;
+}
+
+.dropdown::-webkit-scrollbar-track {
+  background: #d6eaf4;
+  margin-top: 30px;
+}
+.dropdown::-webkit-scrollbar-thumb {
+  background: #8daab9cc;
+  border-radius: 10px;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styles for the avatar initials */
+.avatarInitials {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background: #ffebeb;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: DM Sans;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+}
+
+/* Styles for the assign button */
+.assignButton {
+  width: 150px;
+  height: 31px;
+  margin-left: auto;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  color: #767575;
+}
+
+.assignButton:hover {
+  background-color: #e0e0e0;
+}
+
+.loadingSpinner {
+  width: 100px;
+  height: 100px;
+}
+
+.loadingSpinner::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: 48%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-top: 6px solid #90c4cc;
+  border-right: 6px solid transparent;
+  animation: spinner8217 0.8s linear infinite;
+}
+
+@keyframes spinner8217 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.datePickerInput {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #707070;
+  width: 180px;
+  height: 45px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+}

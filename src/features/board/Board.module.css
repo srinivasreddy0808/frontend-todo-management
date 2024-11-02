@@ -1,0 +1,158 @@
+.container {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: left;
+}
+
+.date {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #707070;
+}
+
+.boardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.boardTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.boardHeader h2 {
+  font-family: Poppins;
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 43.5px;
+  text-align: left;
+}
+
+.addPeople {
+  background-color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #707070;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.collapsAllImage {
+  width: 24px;
+  height: 24px;
+}
+
+.timeframe {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  border-radius: 8px;
+  padding: 24px;
+
+  position: relative;
+  width: 360px;
+  height: 73vh;
+  border-radius: 10px;
+  background: #eef2f5;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.columnHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.columnButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.column::-webkit-scrollbar-button {
+  display: none;
+}
+
+.column::-webkit-scrollbar {
+  width: 12px;
+}
+
+.column::-webkit-scrollbar-track {
+  background: #d6eaf4;
+  margin-top: 30px;
+}
+.column::-webkit-scrollbar-thumb {
+  background: #8daab9cc;
+  border-radius: 10px;
+}
+
+.column h3 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.addButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.copyButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
