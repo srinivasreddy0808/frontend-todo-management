@@ -94,7 +94,7 @@ const CreateTaskModal = ({
         assignTo: userIds[emailIds.indexOf(assignee)], // here we are sending the userid of corresponding email
       };
       if (dueDate) {
-        taskPayload.dueDate = dueDate.toISOString().slice(0, 16);
+        taskPayload.dueDate = dueDate;
       }
 
       const response = await fetch(
@@ -119,6 +119,7 @@ const CreateTaskModal = ({
       onTaskAdded(createdTask.data.task);
       onClose();
     } catch (error) {
+      console.log(error, "error in creating task");
       setError(`${error.message || "Failed to create task"}`);
     } finally {
       setLoading(false);
