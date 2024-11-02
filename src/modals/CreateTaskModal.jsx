@@ -30,9 +30,7 @@ const CreateTaskModal = ({
     (editingTask?.priority || "high").toUpperCase() + " PRIORITY"
   );
   const [dueDate, setDueDate] = useState(
-    editingTask?.dueDate
-      ? new Date(parseInt(editingTask.dueDate)).toISOString().slice(0, 16)
-      : null
+    editingTask?.dueDate ? editingTask.dueDate : null
   );
   const [checklist, setChecklist] = useState(
     editingTask?.checkList.map((item, index) => ({
