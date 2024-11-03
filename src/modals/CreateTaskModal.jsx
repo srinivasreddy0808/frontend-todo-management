@@ -45,7 +45,13 @@ const CreateTaskModal = ({
 
   useEffect(() => {
     if (editingTask) {
-      setAssignee(() => emailIds[userIds.indexOf(editingTask?.assignTo)]);
+      setAssignee(() => {
+        if (editingTask?.assignTo) {
+          return emailIds[userIds.indexOf(editingTask?.assignTo)];
+        } else {
+          return "";
+        }
+      });
     }
   }, [emailIds, editingTask, userIds]);
 
