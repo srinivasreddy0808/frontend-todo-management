@@ -7,7 +7,9 @@ const Sidebar = () => {
   const location = useLocation();
   const logout = () => {
     localStorage.clear();
-    navigate("/login");
+    setTimeout(() => {
+      navigate("/login", { replace: true });
+    }, 2000);
   };
 
   const isActive = (path) => location.pathname === path;
