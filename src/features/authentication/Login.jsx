@@ -131,7 +131,7 @@ const Login = () => {
             className={styles.loginButton}
             disabled={isLoading}
           >
-            Log in
+            {isLoading ? "Loading..." : "Login"}
           </button>
         </form>
         <p className={styles.registerText}>Have no account yet?</p>
