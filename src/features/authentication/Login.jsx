@@ -10,19 +10,23 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [isLoginSuccessful, setIsLoginSuccessful] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (isLoginSuccessful) {
-      setTimeout(() => {
+    if (isLoginSuccessful && !isLoading) {
+      const timer = setTimeout(() => {
         navigate("/app/board", { replace: true });
       }, 5000);
+
+      return () => clearTimeout(timer);
     }
-  }, [isLoginSuccessful, navigate]);
+  }, [isLoginSuccessful, navigate, isLoading]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+    setIsLoading(true);
 
     try {
       const response = await fetch(
@@ -49,6 +53,8 @@ const Login = () => {
     } catch (error) {
       setError("An error occurred. Please try again later.");
       toast.error("An error occurred. Please try again later.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -120,7 +126,11 @@ const Login = () => {
             </span>
           </div>
           {error && <p className={styles.errorMessage}>{error}</p>}
-          <button type="submit" className={styles.loginButton}>
+          <button
+            type="submit"
+            className={styles.loginButton}
+            disabled={isLoading}
+          >
             Log in
           </button>
         </form>
